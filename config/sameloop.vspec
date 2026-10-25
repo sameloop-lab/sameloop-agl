@@ -1,0 +1,67 @@
+# Extension privée SameLoop ; pas un modèle standard COVESA.
+Vehicle:
+  type: branch
+  description: Vehicle root
+Vehicle.SameLoop:
+  type: branch
+  description: Démonstration SameLoop
+Vehicle.SameLoop.Settings:
+  type: actuator
+  datatype: string
+  description: "Requête JSON atomique mode/consigne ; current = réglage accepté"
+Vehicle.SameLoop.Command:
+  type: actuator
+  datatype: string
+  description: "Commande interne JSON avec génération, séquence et duty"
+Vehicle.SameLoop.Faults:
+  type: actuator
+  datatype: string
+  description: "Injection de panne réservée au laboratoire"
+Vehicle.SameLoop.Frame:
+  type: sensor
+  datatype: string
+  description: "Échantillon cohérent JSON du fournisseur"
+Vehicle.SameLoop.State:
+  type: sensor
+  datatype: string
+  description: "État cohérent JSON du contrôleur"
+Vehicle.SameLoop.Temperature:
+  type: sensor
+  datatype: double
+  description: "Température simulée en degrés Celsius"
+Vehicle.SameLoop.SensorValid:
+  type: sensor
+  datatype: boolean
+  description: "Validité du capteur"
+Vehicle.SameLoop.FanApplied:
+  type: sensor
+  datatype: double
+  description: "Ventilation appliquée en pourcentage"
+Vehicle.SameLoop.FanRpm:
+  type: sensor
+  datatype: double
+  description: "Vitesse simulée en tours par minute"
+Vehicle.SameLoop.FanDemand:
+  type: sensor
+  datatype: double
+  description: "Demande du contrôleur en pourcentage"
+Vehicle.SameLoop.Mode:
+  type: sensor
+  datatype: string
+  description: "Mode accepté OFF ou AUTO"
+Vehicle.SameLoop.Setpoint:
+  type: sensor
+  datatype: double
+  description: "Consigne acceptée en degrés Celsius"
+Vehicle.SameLoop.Available:
+  type: sensor
+  datatype: boolean
+  description: "Échantillon valide et récent"
+Vehicle.SameLoop.Overheat:
+  type: sensor
+  datatype: boolean
+  description: "Dernière alarme thermique connue ; lire Available"
+Vehicle.SameLoop.Error:
+  type: sensor
+  datatype: string
+  description: "Dernière erreur de réglage"

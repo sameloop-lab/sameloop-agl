@@ -1,0 +1,13 @@
+test_metadata_matches_runtime_contract (test_catalogue.CatalogueTests.test_metadata_matches_runtime_contract) ... ok
+test_alarm_independent_off_and_preserved_unknown (test_control.ControlTests.test_alarm_independent_off_and_preserved_unknown) ... ok
+test_invalid_frame_inhibits (test_control.ControlTests.test_invalid_frame_inhibits) ... ok
+test_invalid_settings_atomic (test_control.ControlTests.test_invalid_settings_atomic) ... ok
+test_mode_and_clamp (test_control.ControlTests.test_mode_and_clamp) ... ok
+test_old_generation_and_out_of_order_rejected (test_control.ControlTests.test_old_generation_and_out_of_order_rejected) ... ok
+test_restart_requires_second_frame (test_control.ControlTests.test_restart_requires_second_frame) ... ok
+test_two_frames_required_and_cached_frame_expires (test_control.ControlTests.test_two_frames_required_and_cached_frame_expires) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

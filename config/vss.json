@@ -1,0 +1,89 @@
+{
+  "Vehicle": {
+    "type": "branch",
+    "description": "Vehicle root",
+    "children": {
+      "SameLoop": {
+        "type": "branch",
+        "description": "Extension de démonstration SameLoop",
+        "children": {
+          "Settings": {
+            "type": "actuator",
+            "datatype": "string",
+            "description": "Requête JSON atomique mode/consigne ; current = réglage accepté"
+          },
+          "Command": {
+            "type": "actuator",
+            "datatype": "string",
+            "description": "Commande interne JSON avec génération, séquence et duty"
+          },
+          "Faults": {
+            "type": "actuator",
+            "datatype": "string",
+            "description": "Injection de panne réservée au laboratoire"
+          },
+          "Frame": {
+            "type": "sensor",
+            "datatype": "string",
+            "description": "Échantillon cohérent JSON du fournisseur"
+          },
+          "State": {
+            "type": "sensor",
+            "datatype": "string",
+            "description": "État cohérent JSON du contrôleur"
+          },
+          "Temperature": {
+            "type": "sensor",
+            "datatype": "double",
+            "description": "Température simulée en degrés Celsius"
+          },
+          "SensorValid": {
+            "type": "sensor",
+            "datatype": "boolean",
+            "description": "Validité du capteur"
+          },
+          "FanApplied": {
+            "type": "sensor",
+            "datatype": "double",
+            "description": "Ventilation appliquée en pourcentage"
+          },
+          "FanRpm": {
+            "type": "sensor",
+            "datatype": "double",
+            "description": "Vitesse simulée en tours par minute"
+          },
+          "FanDemand": {
+            "type": "sensor",
+            "datatype": "double",
+            "description": "Demande du contrôleur en pourcentage"
+          },
+          "Mode": {
+            "type": "sensor",
+            "datatype": "string",
+            "description": "Mode accepté OFF ou AUTO"
+          },
+          "Setpoint": {
+            "type": "sensor",
+            "datatype": "double",
+            "description": "Consigne acceptée en degrés Celsius"
+          },
+          "Available": {
+            "type": "sensor",
+            "datatype": "boolean",
+            "description": "Échantillon valide et récent"
+          },
+          "Overheat": {
+            "type": "sensor",
+            "datatype": "boolean",
+            "description": "Dernière alarme thermique connue ; lire Available"
+          },
+          "Error": {
+            "type": "sensor",
+            "datatype": "string",
+            "description": "Dernière erreur de réglage"
+          }
+        }
+      }
+    }
+  }
+}

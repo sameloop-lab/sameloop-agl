@@ -1,0 +1,7 @@
+include LICENSE README.md
+recursive-include docs *.md *.txt *.json
+recursive-include tests *.py
+recursive-include packaging *.spec
+recursive-include config *.json *.vspec
+recursive-include scripts *.sh *.py
+include constraints.txt

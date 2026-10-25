@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "sameloop-agl"
+version = "0.1.0"
+description = "Profil KUKSA sur Linux de la démo SameLoop"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["sameloop-plant==0.1.0", "kuksa-client==0.6.0"]
+[project.scripts]
+sameloop-agl = "sameloop_agl.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.data-files]
+"share/sameloop-agl/config" = ["config/vss.json", "config/sameloop.vspec"]
+"share/sameloop-agl/scripts" = ["scripts/run-broker.sh", "scripts/run-broker-podman.sh"]
